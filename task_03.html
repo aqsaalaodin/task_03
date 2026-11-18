@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Training Program</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML Training Program</h1>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#lessons">Lessons</a> |
+      <a href="#media">Media</a> |
+      <a href="#examples">Examples</a> |
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About the Course</h2>
+      <p>Learn <abbr title="HyperText Markup Language">HTML</abbr> from the basics.</p>
+
+      <figure>
+        <img src="C:\bloomrix\html\task_03\course-banner.jpg" alt="Laptop with HTML code" width="600" height="300">
+        <figcaption>Students practice HTML in class.</figcaption>
+      </figure>
+
+      <picture>
+        <source media="(min-width: 800px)" srcset="C:\bloomrix\html\task_03\classroom-large.jpg">
+        <img src="C:\bloomrix\html\task_03\classroom-small.jpg" alt="Classroom with students" width="400" height="250">
+      </picture>
+
+      <p>
+        Classes start on <time datetime="2026-12-01">1 December 2026</time>
+        at <time datetime="10:00">10:00 AM</time>.
+      </p>
+
+      <aside>
+        <p><strong>Note:</strong> Practice every tag in a small file.</p>
+      </aside>
+    </section>
+
+    <section id="lessons">
+      <h2>Lessons</h2>
+      <article>
+        <h3>Lesson 1: Page Structure</h3>
+        <p>Use header, nav, main, section and footer to organize a page.</p>
+      </article>
+      <article>
+        <h3>Lesson 2: Media</h3>
+        <p>Use audio, video and source to add media files.</p>
+      </article>
+      <article>
+        <h3>Lesson 3: Text Meaning</h3>
+        <p>Use q, cite, kbd, samp and abbr to add meaning to text.</p>
+      </article>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="media/lesson-intro.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+
+      <h3>Video</h3>
+      <video controls width="400" poster="C:\bloomrix\html\task_03\video-poster.jpg">
+        <source src="C:\bloomrix\html\task_03\video-poster.jpg" type="video/mp4">
+        <track src="media/captions-en.vtt" kind="captions" srclang="en" label="English" default>
+        Your browser does not support video.
+      </video>
+
+      <h3>Embedded Page</h3>
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=74.40%2C31.08%2C74.50%2C31.15"
+              title="Course location map" width="400" height="250"></iframe>
+    </section>
+
+    <section id="examples">
+      <h2>Examples</h2>
+
+      <h3>HTML Code</h3>
+      <pre><code>&lt;h1&gt;Hello&lt;/h1&gt;
+&lt;p&gt;Welcome!&lt;/p&gt;</code></pre>
+
+      <p>Save your file with <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+      <p>Sample output: <samp>Hello</samp></p>
+
+      <blockquote cite="https://developer.mozilla.org/">
+        HTML gives structure and meaning to web content.
+      </blockquote>
+      <p>
+        Source: <cite>MDN Web Docs</cite>.
+        Remember: <q>Write simple markup.</q>
+      </p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do I need experience?</summary>
+        <p>No, beginners are welcome.</p>
+      </details>
+      <details>
+        <summary>Will I get a certificate?</summary>
+        <p>Yes, after the final project.</p>
+      </details>
+
+      <dialog open>
+        <p>Welcome to the course!</p>
+        <form method="dialog"><button>Close</button></form>
+      </dialog>
+    </section>
+
+  </main>
+
+  <footer>
+    <address>
+      HTML Training Program, Kasur, Punjab<br>
+      Email: <a href="mailto:info@htmltraining.example">info@htmltraining.example</a>
+    </address>
+    <p><small>&copy; 2026 HTML Training Program</small></p>
+  </footer>
+
+</body>
+</html>
